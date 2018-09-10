@@ -1,20 +1,149 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+    Welcome to {{ title }}! <i class="fa fa-plus fa-2x"></i>
+  </h1>  
+</div> -->
 
+
+<!-- Navigation -->
+<nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+  <div class="container">
+    <div class="navbar-translate">
+      <img src="assets/img/detLogo_192.png" alt="Department of Education" id="imgLogo" class="invert-image-color logo-color-on-scroll">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-home" style="color: green;"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/event-details/33" routerLinkActive="active">
+            <i class="fa fa-calendar" style="color: rgb(12, 112, 158);"></i> My Events
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa fa-search" style="color: rgb(187, 126, 47);"></i> Advanced Search
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer class="footer" data-background-color="black">
+  <div class="container">
+
+    <nav class="float-left">
+      <ul>
+
+        <li>
+          <a href="#">
+            Disclaimer
+          </a>
+        </li>
+
+        <li>
+          <a href="#" data-toggle="modal" data-target="#modalCancellationPolicy">
+            Cancellation Policy
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Privacy
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <div class="copyright float-right">
+      &copy;
+      {{copyrightYear}}
+      <a href="https://www.education.wa.edu.au" target="_blank">Department of Education</a>
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- Modals -->
+<div class="modal fade" id="modalCancellationPolicy" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+
+        <h3>Professional Learning Information System (PLIS) Terms and Conditions</h3>
+        <p>
+          In addition to the event information,
+          below are the terms and conditions to be aware of when utilising this system.
+          Please read them carefully and contact the event organiser,
+          listed on the event listing, should you require further information.
+        </p>
+
+        <h3>Payments</h3>
+        <p>
+          Payment is required at the time of registration. Your role dictates your method of payment:
+        </p>
+        <ul>
+          <li>
+            School staff pay by school credit card.
+          </li>
+          <li>
+            Central office and Regional office staff pay by journal transfer.
+            This requires you to contact the event organiser listed.
+          </li>
+        </ul>
+        <p>
+          Should you not have access to payment immediately the online enrolment system will
+          hold your place for 24 hours. To reserve your place for 24 hours without payment,
+          proceed through the enrolment process selecting your program date and sessions.
+          Close the browser on the ‘Cart Summary’ page (one step before payment).
+          When you return, find the program on the calendar and press ‘update’ to continue the enrolment process.
+        </p>
+
+        <h3>Cancellations and refunds</h3>
+        <p>
+          If an event is cancelled, all participants will be emailed and fully refunded.
+          If you choose to withdraw, you will need to email the Secretariat (event contact) listed on your invoice.
+          Invoices are automatically emailed at time of successful registration.
+          Participants who withdraw their enrolment:
+        </p>
+        <ul>
+          <li>
+            <strong>more than seven days prior</strong> to course commencement will receive a full refund.
+          </li>
+          <li>
+            <strong>less than seven days prior</strong> to course commencement will be considered for a
+            refund on a case-by-case basis,
+            and at the discretion of the event organiser.
+          </li>
+        </ul>
+        <p>
+          All refunds are credited via the method through which payment was made.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="material-icons">clear</i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

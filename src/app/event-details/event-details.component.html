@@ -1,0 +1,109 @@
+<!-- Header -->
+<div class="page-header header-filter clear-filter" data-parallax="true" style="background-image: url('./assets/img/event1.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ml-auto mr-auto">
+        <div class="brand">
+          <h3>Graduate teacher module 3 (Padbury)</h3>
+        </div>
+      </div>
+      <div class="col-md-3 ml-auto mr-auto">
+        <div class="card bg-transparent border border-light">
+          <div class="card-body">
+            <h4>20 Oct 2018</h4>
+            when
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 ml-auto mr-auto">
+        <div class="card bg-transparent border border-light">
+          <div class="card-body">
+            <h4>Padbury</h4>
+            where<br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- Content -->
+<div class="main main-raised">
+  <div class="section section-basic">
+    <div class="container">
+
+      <!-- <div class="row">
+        <div class="col-md-12">
+          <div class="title text-center" *ngIf="!showResults">
+            <h2>The search did not return any results!</h2>
+          </div>
+          <div *ngIf="showResults" class="text-center">
+            <h3>Your search returned {{noOfRecords}} events!</h3>
+            <br />
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="row search-results" infinite-scroll [infiniteScrollDistance]="scrollDistance"
+        [infiniteScrollUpDistance]="scrollUpDistance" [infiniteScrollThrottle]="throttle" (scrolled)="onScrollDown()"
+        *ngIf="showResults">
+        <div class="col-md-6" *ngFor="let item of array; index as i">
+          <div class="card bg-light">
+            <div class="card-header card-header-icon card-header-height" [ngClass]="isLastRegistrationFutureDate(item.Last_Registration_Date)?'card-header-success':'card-header-danger'">
+              <span class="card-title">
+                {{i + 1}}. {{item.Event_Name}}
+              </span>
+              (# {{item.Event_ID}})
+            </div>
+            <div class="card-body flex-column h-100">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body" style="height: 163px;">
+                      <h6>When</h6> {{item.Event_Start | date : "dd MMM yyyy hh:mm a"}}<br />to<br />{{item.Event_End |
+                      date : "dd MMM yyyy hh:mm a"}}
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6>Where</h6> Padbury
+                    </div>
+                  </div>
+                  <button class="btn btn-info btn-block">Event Details</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body" [ngClass]="isLastRegistrationFutureDate(item.Last_Registration_Date)?'text-success':'text-danger'">
+                      <h6>Last Registration Date</h6> {{item.Last_Registration_Date | date : "dd MMM yyyy hh:mm a"}}
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h6>Places Left</h6> 10
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="card-footer text-danger justify-content-end">
+              <i class="fa fa-envelope-o fa-lg"></i>&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-star-o fa-lg"></i>&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-download fa-lg"></i>&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-print fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+</div>
